@@ -1,0 +1,256 @@
+.header{
+    display: flex;
+    flex-direction: row;
+}
+.social-links{
+    display: flex;
+    flex-direction: row;
+    align-content: end;
+    margin-left: 35px;
+}
+.social-icons{
+    align-content: center;
+    margin-right: 15px
+}
+
+.logo-name{
+    width: 100%;
+    text-align: center;
+    font-family:'Julius Sans One';
+    font-size: 35px;
+    align-content: center;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+}
+
+.social-icons svg{
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
+
+
+
+.slogan{
+    font-family: 'Inter';
+    font: 'SemiBold 600';
+    font-size: 90px;
+    margin-left: 70px;
+}
+.slogan2 {
+    text-align: left;
+    font-family: 'Inter';
+    font-style: 'SemiBold 600';
+    font-size: 90px;
+    margin-left: 70px;
+    margin-bottom: 50px;
+}
+
+
+
+.intro-section{
+    display:flex;
+    flex-direction: row;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.introduction{
+    display:flex;
+    flex-direction:column;
+}
+.intro-txt{
+    font-family:'inter';
+    margin-right: 30px;
+}
+.intro-img{
+    width: 400px;
+    border-radius: 25px
+}
+
+
+
+.services-section{
+    margin-top: 40px;
+}
+.services-container{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 70px 70px 70px
+}
+.service-box{
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+
+}
+.services-title{
+    font-family: 'inter';
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 70px;
+}
+.service-txt{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    font-family: 'inter';
+}
+.service-txt .service-name{
+    font-weight: 600;
+}
+.service-txt .service-description{
+    font-weight: 250;
+}
+
+
+
+
+.carousel {
+    position: relative;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.carousel-inner {
+    display: flex;
+    overflow: hidden;
+}
+.carasol-header{
+    font-family: 'inter';
+    font-weight: 600;
+}
+.carasol-text{
+    font-family: 'inter';
+    font-weight: 250;
+}
+.carousel-item {
+    display: none;
+    flex-direction: column;
+}
+
+.carousel-item.active {
+    display: flex;
+}
+
+.main-slide {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.main-image img {
+    width: 400px;
+    height: auto;
+}
+
+.slide-text {
+    padding-left: 20px;
+    flex-grow: 1;
+}
+
+.thumbnail-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.thumbnail-container img {
+    width: 290px;
+    height: auto;
+    cursor: pointer;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+}
+
+.prev {
+    left: -28px;
+}
+
+.next {
+    right: -28px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #555;
+}
+
+
+
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.steps-title{
+    font-family: 'inter';
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.steps-text {
+    width: 55%;
+}
+
+.step-header{
+    font-family: 'inter';
+    font-weight: 600;
+}
+.step-description{
+    font-family: 'inter';
+    font-weight: 250;
+}
+
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.step-icon {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.step-icon img {
+    width: 100%;
+}
+
+.step-details h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.step-details p {
+    margin-top: 5px;
+    color: #555;
+}
+
+.steps-image {
+    width: 40%;
+}
+
+.steps-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
