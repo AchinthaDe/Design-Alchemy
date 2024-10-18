@@ -136,6 +136,31 @@
                     <img src="/Assets/box-house-3.png" alt="Thumbnail 2">
                     <img src="/Assets/box-house-4.png" alt="Thumbnail 3">
                 </div>
+                <!-- Thumbnails for Mobile View (1 Thumbnail at a Time with Buttons) -->
+                <div class="thumbnail-container-2">
+                    <div class="slider-container">
+                        <div class="wrapper-holder">
+                            <div class="wrapper">
+                                <!-- Thumbnails as Slider Items (Mobile Version) -->
+                                <div class="thumbnail-slide">
+                                    <img src="/Assets/box-house-2.png" alt="Thumbnail 1">
+                                </div>
+                                <div class="thumbnail-slide">
+                                    <img src="/Assets/box-house-3.png" alt="Thumbnail 2">
+                                </div>
+                                <div class="thumbnail-slide">
+                                    <img src="/Assets/box-house-4.png" alt="Thumbnail 3">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Navigation buttons (for Mobile) -->
+                        <div class="button-holder">
+                            <a class="prev-img" onclick="prevImg()">&#10094;</a>
+                            <a class="next-img" onclick="nextImg()">&#10095;</a>
+                        </div>
+                    </div>
+                </div>
             </div>
     
             <!-- Slide 2 -->
@@ -150,9 +175,15 @@
                     </div>
                 </div>
                 <div class="thumbnail-container">
-                    <img src="/Assets/modern-tranquility-2.png" alt="Thumbnail 1">
-                    <img src="/Assets/modern-tranquility-3.png" alt="Thumbnail 2">
-                    <img src="/Assets/modern-tranquility-4.png" alt="Thumbnail 3">
+                    <div class="carousel-thumb">
+                        <img src="/Assets/modern-tranquility-2.png" alt="Thumbnail 1">
+                    </div>
+                    <div class="carousel-thumb">
+                        <img src="/Assets/modern-tranquility-3.png" alt="Thumbnail 2">
+                    </div>
+                    <div class="carousel-thumb">
+                        <img src="/Assets/modern-tranquility-4.png" alt="Thumbnail 3">
+                    </div>
                 </div>
             </div>
     
@@ -168,9 +199,15 @@
                     </div>
                 </div>
                 <div class="thumbnail-container">
-                    <img src="/Assets/the-riv-2.png" alt="Thumbnail 1">
-                    <img src="/Assets/the-riv-3.png" alt="Thumbnail 2">
-                    <img src="/Assets/the-riv-4.png" alt="Thumbnail 3">
+                    <div class="carousel-thumb">
+                        <img src="/Assets/the-riv-2.png" alt="Thumbnail 1">
+                    </div>
+                    <div class="carousel-thumb">
+                        <img src="/Assets/the-riv-3.png" alt="Thumbnail 2">
+                    </div>
+                    <div class="carousel-thumb">
+                        <img src="/Assets/the-riv-4.png" alt="Thumbnail 3">
+                    </div>
                 </div>
             </div>
             
@@ -224,6 +261,51 @@
     </div>
     
 
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Left Section (Logo and Description) -->
+            <div class="footer-logo">
+                <img src="./Assets/Design-alchemy-logo-white.png" alt="Logo" class="logo">
+                <p>Design Alchemy, your premier destination for luxury and modern interior design</p>
+            </div>
+    
+            <!-- Middle Section (Services) -->
+            <div class="footer-services">
+                <h3>Our Services</h3>
+                <ul>
+                    <li>Interior design</li>
+                    <li>Outdoor design</li>
+                    <li>Lighting design</li>
+                    <li>Office design</li>
+                    <li>3D Visualization</li>
+                    <li>Documentation</li>
+                    <li>Pricing</li>
+                    <li>Press inquiries</li>
+                </ul>
+            </div>
+    
+            <!-- Right Section (Contact Information) -->
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>
+                        <img width="20" height="20" src="https://img.icons8.com/material-rounded/24/FFFFFF/mail.png" alt="mail"/>
+                        info@vivadecor.com
+                    </li>
+                    <li>
+                        <?xml version="1.0"?><svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">    <path d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z"/></svg>
+                        @vivadecor
+                    </li>
+                    <li>
+                        <?xml version="1.0"?><svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">    <path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"/></svg>
+                        @vivadecor
+                    </li>
+                    <li>Colombo, Sri Lanka</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 
 

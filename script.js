@@ -1,5 +1,7 @@
 let currentSlide = 0;
 const slides = document.querySelectorAll('.carousel-item');
+let currentThumbnail = 0;
+const thumbnails = document.querySelectorAll('.wrapper div');
 
 function showSlide(index) {
     slides.forEach((slide, i) => {
@@ -22,3 +24,23 @@ function prevSlide() {
 
 // Initialize first slide as active
 showSlide(currentSlide);
+
+
+// For Thumbnails in mobile
+function showThumbnail(index) {
+    const sliderWidth = document.querySelector('.wrapper-holder').offsetWidth;
+    document.querySelector('.wrapper').style.transform = `translateX(-${index * sliderWidth}px)`;
+}
+
+function nextImg() {
+    currentThumbnail = (currentThumbnail + 1) % thumbnails.length;
+    showThumbnail(currentThumbnail);
+}
+
+function prevImg() {
+    currentThumbnail = (currentThumbnail - 1 + thumbnails.length) % thumbnails.length;
+    showThumbnail(currentThumbnail);
+}
+
+// Initialize the first thumbnail as active
+showThumbnail(currentThumbnail);
