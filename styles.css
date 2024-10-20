@@ -74,11 +74,13 @@
 }
 .intro-txt{
     font-family:'inter';
-    margin-right: 30px;
 }
 .intro-img{
     width: 400px;
     border-radius: 25px
+}
+.contact-button{
+    
 }
 
 
@@ -369,12 +371,23 @@ footer {
 
 @media (max-width: 960px){
 
-    .intro-img{
-        width: 100%;
-        justify-content: center;
-        border-radius: 25px
+
+    .social-links{
+        display: none;
     }
-    
+    .logo-name{
+        text-align: start;
+    }
+    .slogan{
+        font-size: 50px;
+        margin-left: 20px;
+    }
+    .slogan2{
+        font-size: 50px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
 
 
 
@@ -382,10 +395,21 @@ footer {
     .intro-section{
         display:flex;
         flex-direction: column;
-        margin-left: 70px;
-        margin-right: 70px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
+    .intro-img{
+        width: 100%;
+        justify-content: center;
+        border-radius: 25px;
+        margin-bottom: 20px
+    }
+
+    .intro-txt{
+        text-align: center;
+    }
+    
 
 
 
@@ -394,12 +418,72 @@ footer {
     .services-container{
         display: flex;
         flex-direction: column;
-        margin: 20px 70px 70px 70px
+        margin: 20px 20px 20px 20px
+    }
+    .services-title{
+        margin-left: 0px;
+        text-align: center;
+    }
+    .service-box{
+        flex-direction: column;
+    }
+    .service-svg{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        margin-top: 20px;
+
     }
 
 
 
 
+
+
+
+    .carousel {
+        position: relative;
+        max-width: 900px;
+        margin: 0px;
+    }
+    
+    .carousel-inner {
+        display: flex;
+        overflow: hidden;
+    }
+    .carasol-header{
+        font-family: 'inter';
+        font-weight: 600;
+    }
+    .carasol-text{
+        font-family: 'inter';
+        font-weight: 250;
+    }
+    .carousel-item {
+        display: none;
+        flex-direction: column;
+    }
+    
+    .carousel-item.active {
+        display: flex;
+    }
+    
+    .main-slide {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    
+    .main-image{
+        display: flex;
+    }
+    .main-image img {
+        width: 100%;
+    }
+    
+    .slide-text {
+        padding-left: 20px;
+        flex-grow: 1;
+    }
     .main-slide {
         display: flex;
         flex-direction: column;
@@ -414,6 +498,12 @@ footer {
         justify-content: center;
         align-items: center;
         position: relative;
+    }
+    .thumbnail-slide{
+        display: flex;
+    }
+    .thumbnail-slide img{
+        width: 100%;
     }
 
     .slider-container {
@@ -438,7 +528,27 @@ footer {
         min-width: 100%;
     }
 
-    /* Navigation buttons for mobile */
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        background-color: #333;
+        color: white;
+        cursor: pointer;
+        border: none;
+        padding: 5px;
+    }
+    
+    .prev {
+        left: -2px;
+    }
+    
+    .next {
+        right: 0px;
+    }
+
+
+
+    /* Navigation buttons for thumbnails in mobile */
     .button-holder a {
         position: absolute;
         top: 50%;
@@ -458,6 +568,8 @@ footer {
     .next-img {
         right: 5px;
     }
+
+    
 
     .prev-img:hover, .next-img:hover {
         background-color: rgba(0, 0, 0, 0.7);
