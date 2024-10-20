@@ -71,6 +71,7 @@
 .introduction{
     display:flex;
     flex-direction:column;
+    margin-left: 20px;
 }
 .intro-txt{
     font-family:'inter';
@@ -120,11 +121,14 @@
 
 
 
-
+.carousel-background{
+    background-color: black;
+}
 .carousel {
     position: relative;
     max-width: 900px;
     margin: 50px auto;
+    margin-top: 10px;
 }
 
 .carousel-inner {
@@ -134,10 +138,12 @@
 .carasol-header{
     font-family: 'inter';
     font-weight: 600;
+    color: white;
 }
 .carasol-text{
     font-family: 'inter';
     font-weight: 250;
+    color: white;
 }
 .carousel-item {
     display: none;
@@ -151,6 +157,7 @@
 .main-slide {
     display: flex;
     margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 .main-image img {
@@ -170,6 +177,7 @@
 .thumbnail-container {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 13px;
 }
 
 .thumbnail-container img {
@@ -498,6 +506,7 @@ footer {
         justify-content: center;
         align-items: center;
         position: relative;
+        margin-bottom: 10px;
     }
     .thumbnail-slide{
         display: flex;
@@ -580,4 +589,69 @@ footer {
     .footer-container{
         flex-direction: column;
     }
+
+
+
+
+
+
+
+    .steps-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+    }
+    
+    .steps-title{
+        font-family: 'inter';
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    
+    .steps-text {
+        width: 80%;
+    }
+
+    .step {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    
+    .step-icon {
+        width: 50px;
+        margin-right: 15px;
+    }
+    
+    .step-icon img {
+        width: 100%;
+    }
+    
+    .step-details h2 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .step-details p {
+        margin-top: 5px;
+        color: #555;
+    }
+    
+    .steps-image {
+        width: 100%;
+    }
+    
+    .steps-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
 }
