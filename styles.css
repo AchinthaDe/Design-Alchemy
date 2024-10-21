@@ -180,6 +180,7 @@
 
 .main-image img {
     width: 400px;
+    max-height: 285px;
     height: auto;
     border-radius: 10px;
 }
@@ -537,6 +538,7 @@ footer {
     .slide-text {
         padding-left: 20px;
         flex-grow: 1;
+        height: 205px;
     }
     .main-slide {
         display: flex;
@@ -728,11 +730,11 @@ footer {
     .footer-logo p {
         margin-top: 0px;
     }
+}
 
 
-
-
-
-
-
+@media (max-width: 510px){
+    .slogan2{
+        width: 70%;
+    }
 }
