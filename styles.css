@@ -80,8 +80,18 @@
     width: 400px;
     border-radius: 10px
 }
+.contact-btn-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
 .contact-button{
-    
+    font-family: 'inter';
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
 }
 
 
@@ -211,7 +221,7 @@
 .prev, .next {
     position: absolute;
     top: 50%;
-    background-color: #333;
+    background-color: none;
     color: white;
     cursor: pointer;
     border: none;
@@ -497,6 +507,7 @@ footer {
         position: relative;
         max-width: 900px;
         margin: 0px;
+        margin-top: 10px;
     }
     
     .carousel-inner {
@@ -506,10 +517,16 @@ footer {
     .carasol-header{
         font-family: 'inter';
         font-weight: 600;
+        text-align: center;
+        margin-bottom: 10px;
+        
     }
     .carasol-text{
         font-family: 'inter';
         font-weight: 250;
+        margin-right: 30px;
+        margin-left: 30px;
+        text-align: center;
     }
     .carousel-item {
         display: none;
@@ -536,9 +553,9 @@ footer {
     }
     
     .slide-text {
-        padding-left: 20px;
+        padding-left: 0px;
         flex-grow: 1;
-        height: 205px;
+        margin-bottom: 10px;
     }
     .main-slide {
         display: flex;
@@ -554,7 +571,7 @@ footer {
         justify-content: center;
         align-items: center;
         position: relative;
-        margin-bottom: 10px;
+        margin-bottom: 25px;
     }
     .thumbnail-slide{
         display: flex;
@@ -565,6 +582,7 @@ footer {
 
     .slider-container {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -586,51 +604,36 @@ footer {
     }
 
     .prev, .next {
-        position: absolute;
-        top: 50%;
-        background-color: #333;
-        color: white;
-        cursor: pointer;
-        border: none;
         padding: 5px;
     }
     
     .prev {
-        left: -2px;
+        left: 5px;
     }
     
     .next {
-        right: 0px;
-    }
-
-
-
-    /* Navigation buttons for thumbnails in mobile */
-    .button-holder a {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        padding: 10px;
-        cursor: pointer;
-        text-decoration: none;
-        z-index: 10;
-    }
-
-    .prev-img {
-        left: 5px;
-    }
-
-    .next-img {
         right: 5px;
     }
 
-    
-
-    .prev-img:hover, .next-img:hover {
-        background-color: rgba(0, 0, 0, 0.7);
+    .dots {
+        text-align: center;
+        margin-top: 10px;
     }
+    
+    .thumbnail-dot {
+        height: 10px;
+        width: 10px;
+        margin: 0 5px;
+        background-color: #ccc;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+    }
+    
+    .thumbnail-dot.active {
+        background-color: #333;
+    }
+
 
 
 
